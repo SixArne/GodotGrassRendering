@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://dcjhub3ynktwd"]
+
+[ext_resource type="Material" uid="uid://h7fxcg2qepo4" path="res://game/components/grass/shaders/mat_floor.tres" id="1_3k7qy"]
+
+[node name="WindScene" type="Node3D"]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.101432, 0)
+size = Vector3(1, 0.2, 1)
+material = ExtResource("1_3k7qy")

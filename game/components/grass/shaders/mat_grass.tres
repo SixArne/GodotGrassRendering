@@ -1,0 +1,14 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://dplv5xyv4wdoq"]
+
+[ext_resource type="Shader" path="res://game/components/grass/shaders/sha_grass.gdshader" id="1_xbiig"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_xbiig")
+shader_parameter/color_top = Color(0, 1, 0, 1)
+shader_parameter/color_bottom = Color(1, 0, 0, 1)
+shader_parameter/deg_sway_pitch = 80.0
+shader_parameter/deg_sway_yaw = 45.0
+shader_parameter/wind_scale = 4.0
+shader_parameter/wind_speed = 1.0
+shader_parameter/wind_direction = Vector3(0, 0, -1)

@@ -1,0 +1,9 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://h7fxcg2qepo4"]
+
+[ext_resource type="Shader" path="res://game/components/grass/shaders/wind_shader.gdshader" id="1_8wd8p"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_8wd8p")
+shader_parameter/wind_speed = 1.0
+shader_parameter/wind_direction = Vector2(1, 0)

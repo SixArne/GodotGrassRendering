@@ -1,0 +1,21 @@
+[gd_scene load_steps=5 format=3 uid="uid://v5yashwsmwj5"]
+
+[ext_resource type="Material" uid="uid://dplv5xyv4wdoq" path="res://game/components/grass/shaders/mat_grass.tres" id="1_lk3nd"]
+[ext_resource type="ArrayMesh" uid="uid://bnlquihqh6c2r" path="res://game/components/grass/meshes/grass.res" id="2_b64h3"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_rfcuq"]
+size = Vector2(10, 10)
+
+[sub_resource type="MultiMesh" id="MultiMesh_rfjjh"]
+transform_format = 1
+use_custom_data = true
+mesh = ExtResource("2_b64h3")
+
+[node name="GrassScene" type="Node3D"]
+
+[node name="Floor" type="MeshInstance3D" parent="."]
+mesh = SubResource("PlaneMesh_rfcuq")
+
+[node name="MultiMeshInstance3D" type="MultiMeshInstance3D" parent="."]
+material_override = ExtResource("1_lk3nd")
+multimesh = SubResource("MultiMesh_rfjjh")
